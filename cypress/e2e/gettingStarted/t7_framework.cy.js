@@ -37,11 +37,21 @@ cy.get("input[name='name']:nth-child(2)").type(this.data.name)
 
 cy.get(':nth-child(2) > .nav-link').click()
 
-
 cy.productAddCart('Samsung Note 8')
 
+/*
 
+this.data.productName.forEach(element => {
+    cy.productAddCart(element)
 
+});
+
+*/
+
+this.data.ProductName.forEach(function(element){
+
+    cy.productAddCart(element)
+});
 
 
 
