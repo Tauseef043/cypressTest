@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 import HomePageO from '../pageObjects/HomePageOB.cy.js'
+import {CheckOutPageOB} from '../pageObjects/CheckOutPageOB.cy.js'
 describe('My Second Test Suite', function() 
 {
 
@@ -12,30 +13,30 @@ describe('My Second Test Suite', function()
     })
 it('Cypress Framework part 1',function() {
 
-   const homeOB= new HomePageO()
+   const homePage= new HomePageO()
     cy.visit('https://rahulshettyacademy.com/angularpractice')
 /*
  cy.get("input[name='name']:nth-child(2)").type("Tauseef")
  cy.get('#exampleFormControlSelect1').select("Female")
 */
-cy.get("input[name='name']:nth-child(2)").type(this.data.name)
- cy.get('#exampleFormControlSelect1').select(this.data.gender)
+homePage.getNameEB().type(this.data.name)
+homePage.getGender().select(this.data.gender)
 
  //verifing Two-way Data Binding example field
  
- cy.get(':nth-child(4) > .ng-untouched').should('have.value',this.data.name)
+ homePage.getTwoWayDataBinding().should('have.value',this.data.name)
 
 //cy.pause()
  //verifying min length of field
- cy.get("input[name='name']:nth-child(2)").should('have.attr','minlength','2')
+ homePage.getNameEB().should('have.attr','minlength','2')
  
  //verifying checkbox is disabled or not
 
- cy.get('#inlineRadio3').should('be.disabled')
+ homePage.getEnterprenuer().should('be.disabled')
 
 //building customize cypress command
 
-cy.get(':nth-child(2) > .nav-link').click()
+homePage.getShopBtn().click() //shop  button
 
 cy.productAddCart('Samsung Note 8')
 
@@ -54,6 +55,9 @@ this.data.ProductName.forEach(function(element){
 });
 
 
+const CheckOutPage= new CheckOutPageOB()
+
+CheckOutPage.getCartBtn().click()
 
 
 
