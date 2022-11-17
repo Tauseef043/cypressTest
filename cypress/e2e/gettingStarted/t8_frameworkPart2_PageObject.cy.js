@@ -58,10 +58,7 @@ this.data.ProductName.forEach(function(element){
 const CheckOutPage= new CheckOutPageOB()
 
 CheckOutPage.getCartBtn().click()
-
-
-
-
+// ggyftf
 
 } )
 
