@@ -2,5 +2,6 @@
   "name": "Tauseef",
   "email": "hello@cypress.io",
   "gender": "Female",
-  "ProductName": ["Blackberry","Samsung Note 8"]
+  "ProductName": ["Blackberry","Samsung Note 8"],
+  "country": "india"
 }
