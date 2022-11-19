@@ -5,6 +5,7 @@ module.exports = defineConfig({
   e2e: {
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 60000,
+    reporter: 'mochawesome',
 
 
     //declaring custom global enviroment variable
