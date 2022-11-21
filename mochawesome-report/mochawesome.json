@@ -1,118 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 3,
-    "passes": 3,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-19T14:28:51.936Z",
-    "end": "2022-11-19T14:28:57.993Z",
-    "duration": 6057,
-    "testsRegistered": 3,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2022-11-21T06:01:01.720Z",
+    "end": "2022-11-21T06:01:01.723Z",
+    "duration": 3,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "58d614c2-7144-4230-9383-19747c9a4ae4",
-      "title": "",
-      "fullFile": "cypress\\e2e\\2-advanced-examples\\location.cy.js",
-      "file": "cypress\\e2e\\2-advanced-examples\\location.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "81505897-927e-4912-85cc-f312aa8ccf2a",
-          "title": "Location",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "cy.hash() - get the current URL hash",
-              "fullTitle": "Location cy.hash() - get the current URL hash",
-              "timedOut": null,
-              "duration": 1667,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "// https://on.cypress.io/hash\ncy.hash().should('be.empty');",
-              "err": {},
-              "uuid": "d5d169ef-8f28-427e-b791-8f6e7c2c08b7",
-              "parentUUID": "81505897-927e-4912-85cc-f312aa8ccf2a",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "cy.location() - get window.location",
-              "fullTitle": "Location cy.location() - get window.location",
-              "timedOut": null,
-              "duration": 462,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "// https://on.cypress.io/location\ncy.location().should(location => {\n  expect(location.hash).to.be.empty;\n  expect(location.href).to.eq('https://example.cypress.io/commands/location');\n  expect(location.host).to.eq('example.cypress.io');\n  expect(location.hostname).to.eq('example.cypress.io');\n  expect(location.origin).to.eq('https://example.cypress.io');\n  expect(location.pathname).to.eq('/commands/location');\n  expect(location.port).to.eq('');\n  expect(location.protocol).to.eq('https:');\n  expect(location.search).to.be.empty;\n});",
-              "err": {},
-              "uuid": "dcc4f6f8-de56-478b-9406-f02e94c4f977",
-              "parentUUID": "81505897-927e-4912-85cc-f312aa8ccf2a",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "cy.url() - get the current URL",
-              "fullTitle": "Location cy.url() - get the current URL",
-              "timedOut": null,
-              "duration": 440,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "// https://on.cypress.io/url\ncy.url().should('eq', 'https://example.cypress.io/commands/location');",
-              "err": {},
-              "uuid": "20fed788-1b35-4488-bd80-a4545771176c",
-              "parentUUID": "81505897-927e-4912-85cc-f312aa8ccf2a",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "d5d169ef-8f28-427e-b791-8f6e7c2c08b7",
-            "dcc4f6f8-de56-478b-9406-f02e94c4f977",
-            "20fed788-1b35-4488-bd80-a4545771176c"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 2569,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {
