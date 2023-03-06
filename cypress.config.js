@@ -1,8 +1,13 @@
 const { defineConfig } = require("cypress");
 
+const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+
+
+
 module.exports = defineConfig({
   projectId: 'fe4n49',
   e2e: {
+    
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 60000,
     reporter: 'mochawesome',
@@ -23,10 +28,18 @@ module.exports = defineConfig({
       "openMode": 0
     },
 
-    
-    setupNodeEvents(on, config) {
+      async  setupNodeEvents(on, config) {
       // implement node event listeners here
+      on('task', {downloadFile})
+      
+
+
+return config;
+
+
+
     },
+    
  
   },
 });

@@ -17,7 +17,7 @@ class HomePageOB{
       return  cy.get('#inlineRadio3')
     }
     getShopBtn()
-    {
+    { 
         return cy.get(':nth-child(2) > .nav-link')
     }
     getCartBtn()
